@@ -1,0 +1,41 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:58643",
+      "sslPort": 44388
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/authenticate/users",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_NAME": "UsersDatabase",
+        "TWEET_COLLECTION_NAME": "Users"
+      }
+    },
+    "AuthorizationService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/authenticate/users",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "DATABASE_NAME": "UsersDatabase",
+        "TWEET_COLLECTION_NAME": "Users"
+      },
+      "applicationUrl": "https://localhost:5003;http://localhost:5004"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/authenticate/users",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}
